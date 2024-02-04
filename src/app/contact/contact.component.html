@@ -1,0 +1,30 @@
+<div class="mb-3 margin">
+  <div class="container pt-3">
+    <div class="text-center pt-4 mb-3">
+      <h2 class="mb-3 fs-1 fw-bolder">CONATCT SECTION</h2>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="line"></div>
+        <i class="fa-solid fa-star text-black mx-2"></i>
+        <div class="line"></div>
+      </div>
+    </div>
+    <form class="p-3 mx-auto mt-5">
+      <label for="userName" [ngClass]="{'__top': isDirty1,'__notTop':!isDirty1}">
+        Username:
+      </label>
+      <input type="text" id="userName" name="userName"
+        class="form-control border-0 border-bottom py-3 position-relative mb-2" placeholder="userName"
+        (input)="onInputChange1($event)">
+      <label for="userAge" [ngClass]="{'__top': isDirty2,'__notTop':!isDirty2}">User Age :</label>
+      <input type="number" id="userAge" placeholder="User Age" name="userAge"
+        class="form-control border-0 border-bottom py-3 position-relative mb-2" (input)="onInputChange2($event)">
+      <label for="userEmail" [ngClass]="{'__top': isDirty3,'__notTop':!isDirty3}">User Email :</label>
+      <input type="email" id="userEmail" placeholder="User Email" name="userEmail"
+        class="form-control border-0 border-bottom py-3 position-relative mb-2" (input)="onInputChange3($event)">
+      <label for="userPassword" [ngClass]="{'__top': isDirty4,'__notTop':!isDirty4}">User Password :</label>
+      <input type="password" id="userPassword" placeholder="User Password" name="userPassword"
+        class="form-control border-0 border-bottom py-3 position-relative mb-2" (input)="onInputChange4($event)">
+      <button class="btn mt-4 text-white" style="background-color: #1abc9c;"> send Message </button>
+    </form>
+  </div>
+</div>

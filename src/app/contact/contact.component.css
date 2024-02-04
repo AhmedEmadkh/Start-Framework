@@ -1,0 +1,35 @@
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem transparent;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: black;
+}
+label {
+  position: relative;
+  top: 48px;
+  transition: top 0.6s;
+  color: #1abc9c;
+}
+.__top {
+  top: 0 ;
+}
+
+.__notTop{
+  top: 40px !important;
+}
+form{
+  width: 50%;
+}
+@media(max-width:776px){
+  form{
+    width: 100%;
+  }
+}
+.margin{
+  margin-top: 100px;
+}

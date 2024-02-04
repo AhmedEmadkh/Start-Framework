@@ -1,0 +1,17 @@
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: black;
+}
+.layer{
+  background-color: #1abc9ce6;
+  opacity: 0;
+  cursor: pointer;
+  transition: .6s opacity;
+}
+.card:hover .layer{
+  opacity: 1;
+}
+.margin{
+  margin-top: 100px;
+}
